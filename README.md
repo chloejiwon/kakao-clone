@@ -31,11 +31,11 @@
 
     * Semantic - has meaning
 
-        ex) <h1>
+        ex) `<h1>`
 
     * Non-Semantic - no meaning 
 
-        ex) <div> , <span>
+        ex) `<div> , <span>`
 
 
 5. ID / Class
@@ -83,4 +83,19 @@ If you want to describe ID or Class,
     property-name: value;
 }
 ```
+
+2. padding & margin
+
+Clockwise 🕔
+
+ * padding : TOP - RIGHT - BOTTOM - LEFT
+
+ * padding : TOP-BOTTOM LEFT-RIGHT
+
+3. border
+
+ * border : width - style - color
+
+ ex) border: 20px dashed red;
+
 
