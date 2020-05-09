@@ -1,4 +1,4 @@
-# 💬 kakao-cone
+# 💬 kakao-clone
 
 ## clone Kakaotalk using html, css
 
