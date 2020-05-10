@@ -99,3 +99,19 @@ Clockwise 🕔
  ex) border: 20px dashed red;
 
 
+4. block
+
+ : Doesn't accept anything else that's next to it
+
+ ex)  `display: block;`
+    
+ * inline-block : allows others next to each other
+
+ ex)  `display: inline-block;`
+
+ * inline (=text): deletes every property 
+
+ it's not a block anymore. like a text. 
+
+ ex) `display: inline;`
+
