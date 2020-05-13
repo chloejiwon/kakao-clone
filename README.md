@@ -134,36 +134,36 @@ Clockwise 🕔
 
  * absolute
 
-it finds relative parent, and then put it relatively to parent's position.
+ it finds relative parent, and then put it relatively to parent's position.
 
-in below case, .abs-box (which seems to be parent of abs-child) doesn't have `position: relative;` so parent is now body.
+ in below case, .abs-box (which seems to be parent of abs-child) doesn't have `position: relative;` so parent is now body.
 
-So, abs-child box is positioned as 0 px from body's right 
+ So, abs-child box is positioned as 0 px from body's right 
 
-** because, body is always relative **
+ **because, body is always relative**
 
-    ```css
-    .abs-box{
-        width: 400px;
-        height: 400px;
-        background-color: yellow;
-    }
-    .abs-child{
-        width: 100px;
-        height: 100px;
-        background-color: green;
-        position: absolute;
-        right: 0;
-    }   
-    ```
+```css
+.abs-box{
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+}
+.abs-child{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: absolute;
+    right: 0;
+}   
+```
 
-    ```html
-    <body>
-    <div class="abs-box">
-        <div class="abs-child"></div>
-    </div>
-    </body>
-    ```
+```html
+<body>
+<div class="abs-box">
+    <div class="abs-child"></div>
+</div>
+</body>
+```
 
 
 
