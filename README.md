@@ -115,3 +115,55 @@ Clockwise 🕔
 
  ex) `display: inline;`
 
+
+5. position
+
+ by deault, every box's position is static
+
+ `position: static;`
+
+ it means wherever you put this element, you will find it 
+
+ * fixed 
+
+ if you set position to `fixed`, it means it follows to be there even though you scroll. it stays with you 
+
+ after setting position to `fixed`, you can set top, bottom, left, right 
+ 
+ and put it on top of everything
+
+ * absolute
+
+it finds relative parent, and then put it relatively to parent's position.
+
+in below case, .abs-box (which seems to be parent of abs-child) doesn't have `position: relative;` so parent is now body.
+
+So, abs-child box is positioned as 0 px from body's right 
+
+** because, body is always relative **
+
+    ```css
+    .abs-box{
+        width: 400px;
+        height: 400px;
+        background-color: yellow;
+    }
+    .abs-child{
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        position: absolute;
+        right: 0;
+    }   
+    ```
+
+    ```html
+    <body>
+    <div class="abs-box">
+        <div class="abs-child"></div>
+    </div>
+    </body>
+    ```
+
+
+

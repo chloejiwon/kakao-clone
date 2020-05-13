@@ -2,22 +2,60 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Inline block</title>
+        <title>Position</title>
         <link href="style.css" rel="stylesheet">
         <style>
-            .box{
+            body,html{
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                background-color: black;
+            }
+            body{
+                height: 400%;
+                background-color: red;
+            }
+            /* Position Fixed
+            #boxone{
+                height: 300px;
+                width: 300px;
                 background-color: yellow;
-                width: 200px;
-                height: 200px;
-                border: 2px solid black;
-                display: inline;
+                display: block;
+            }
+            #boxtwo{
+                height: 300px;
+                width: 300px;
+                background-color: green;
+                position: fixed;
+                right: 0px;
+            }
+            */
+            .abs-box{
+                width: 400px;
+                height: 400px;
+                background-color: yellow;
+            }
+            .abs-child{
+                width: 100px;
+                height: 100px;
+                background-color: green;
+                position: absolute;
+                right: 0;
             }
         </style>
     </head>
     <body>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <!-- position fixed 
+        <div id=boxone>
+            <div class="box-child"></div>
+        </div>
+        <div id=boxtwo>
+            <div class="box-child"></div>
+        </div>
+        -->
+        <div class="abs-box">
+            <div class="abs-child"></div>
+        </div>
     </body>
 
 </html>
