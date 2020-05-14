@@ -2,32 +2,37 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Flex</title>
+        <title>Selectors and Pseudo Selectors</title>
         <link href="style.css" rel="stylesheet">
         <style>
-            body,html{
-                height: 100%;
-            }
-            .father{
-                display: flex;
-                height: 100%;
-                justify-content: space-around;
-                align-items: center;
-                flex-direction: column;
-            }
-            .box{
-                width: 200px;
-                height: 200px;
-                background-color: red;
-                border: 1px solid;
-            }
+        input[type="submit"]{
+            background-color: yellow;
+        }
+        input[type="password"]{
+            background-color: blue;
+        }
+        input{
+            border: 1px solid green;
+        }
+        .box{
+            background-color: green;
+            display: block;
+            border: 1px solid gray;
+            height: 100px;
+        }
+        .box:last-child{
+            background-color: pink;
+        }
         </style>
     </head>
     <body>
-        <div class="father">
+        <div class="container">
             <div class="box"></div>
             <div class="box"></div>
-            <div class="box"></div>
+            <div class="box">
+                <input type="password" required="required" />
+                <input type="submit" />
+            </div>
         </div>
     </body>
 

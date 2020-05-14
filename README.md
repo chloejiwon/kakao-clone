@@ -187,3 +187,25 @@ Clockwise 🕔
 }
  ```
 
+### 7. selectors and pseudo selectors
+
+
+ ```css
+input[type="password"]{
+    background-color: blue;
+}
+ ```
+ 
+ `element :<<pseudo selectors>>` 
+
+ take all elements and select the one with selector
+
+
+```css
+.box:last-child{
+    background-color: pink;
+}
+```
+
+
+ 
