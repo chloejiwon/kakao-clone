@@ -2,38 +2,23 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Selectors and Pseudo Selectors</title>
+        <title>CSS states</title>
         <link href="style.css" rel="stylesheet">
         <style>
-        input[type="submit"]{
-            background-color: yellow;
-        }
-        input[type="password"]{
-            background-color: blue;
-        }
-        input{
-            border: 1px solid green;
-        }
         .box{
             background-color: green;
-            display: block;
-            border: 1px solid gray;
-            height: 100px;
+            font-size: 40px;
         }
-        .box:last-child{
+        .box:hover{
             background-color: pink;
-        }
+        }   
+        .box:active{
+            background-color: red;
+        }        
         </style>
     </head>
     <body>
-        <div class="container">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box">
-                <input type="password" required="required" />
-                <input type="submit" />
-            </div>
-        </div>
+        <span class="box">lalalala</span>
     </body>
 
 </html>
