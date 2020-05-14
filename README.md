@@ -8,9 +8,9 @@
 
 ### HTML
 
-1. DOCTYPE : self contained tag (don't need to be closed)
+#### 1. DOCTYPE : self contained tag (don't need to be closed)
 
-2. meta : extra information
+#### 2. meta : extra information
 
     charset : character encoding
 
@@ -18,7 +18,7 @@
 
     name = "description"
 
-3. head / body 
+#### 3. head / body 
 
     information & invisible to user - head 
 
@@ -27,7 +27,7 @@
 
     So meta is located in the head
 
-4. Tags - Semantic / Non-Semantic
+#### 4. Tags - Semantic / Non-Semantic
 
     * Semantic - has meaning
 
@@ -38,7 +38,7 @@
         ex) `<div> , <span>`
 
 
-5. ID / Class
+#### 5. ID / Class
 
     How Do I differentiate headers when I have multiple header tags? 
 
@@ -52,7 +52,7 @@
 
 ### CSS
 
-1. CSS has two Part - Selector / Property
+#### 1. CSS has two Part - Selector / Property
 
 `property-name: value;`
 
@@ -84,7 +84,7 @@ If you want to describe ID or Class,
 }
 ```
 
-2. padding & margin
+#### 2. padding & margin
 
 Clockwise 🕔
 
@@ -92,14 +92,14 @@ Clockwise 🕔
 
  * padding : TOP-BOTTOM LEFT-RIGHT
 
-3. border
+#### 3. border
 
  * border : width - style - color
 
  ex) border: 20px dashed red;
 
 
-4. block
+#### 4. block
 
  : Doesn't accept anything else that's next to it
 
@@ -116,7 +116,7 @@ Clockwise 🕔
  ex) `display: inline;`
 
 
-5. position
+#### 5. position
 
  by deault, every box's position is static
 
@@ -165,5 +165,21 @@ Clockwise 🕔
 </body>
 ```
 
+#### 6. flex
 
+ I don't need to talk to children, only talk to the father.
+
+ **fater moves children**
+
+
+ ```css
+.father{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* justify-content doing it horizentally  */
+    /* align-items is vertically */
+    /* it doesn't have display : inline-block, but it does! */
+}
+ ```
 
