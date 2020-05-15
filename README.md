@@ -209,4 +209,20 @@ input[type="password"]{
 
 ### 8. css states
 
- 
+ hover, active, focus, visited
+
+### 9. transition
+
+ ooh... so cool...
+
+ below code, we can create animation that transits from background color --> hover over during 5sec.
+
+ transition works better on focus, active, hover
+
+```css
+.box{
+    transition: background-color 5s ease-in-out;
+}
+```
+
+### 10. transformation

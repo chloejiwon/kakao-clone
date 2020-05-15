@@ -2,23 +2,25 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>CSS states</title>
+        <title>Transitions</title>
         <link href="style.css" rel="stylesheet">
-        <style>
+        <style> 
         .box{
-            background-color: green;
-            font-size: 40px;
+            background-color : red;
+            color: white;
+            transition:all 5s ease-in-out;
         }
         .box:hover{
-            background-color: pink;
-        }   
-        .box:active{
-            background-color: red;
-        }        
+            background-color : blue;
+            color: black;
+
+        }
         </style>
     </head>
     <body>
-        <span class="box">lalalala</span>
+        <span class="box">
+            Text
+        </span>
     </body>
 
 </html>
