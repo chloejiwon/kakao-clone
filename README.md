@@ -226,3 +226,29 @@ input[type="password"]{
 ```
 
 ### 10. transformation
+
+ ooh...cool 👀
+
+### 11. animation
+
+ `@keyframes` tells css that you created **animation**
+
+ we need steps **from, to** or **0%, 50%, 100%**
+
+ if you put `infinite` inside animation, it will repeat animation forever
+
+
+  ```css
+    .class {
+        animation: 5s <<name>> ease-in-out;
+    }
+    @keyframes <<name>>{
+        from{
+            transform: none;
+        }
+        to{
+            transform: rotate(1turn) scale(.5, .5);
+        }
+    }
+  ```
+

@@ -2,25 +2,32 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Transitions</title>
+        <title>Animation</title>
         <link href="style.css" rel="stylesheet">
         <style> 
         .box{
-            background-color : red;
-            color: white;
-            transition:all 5s ease-in-out;
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+            animation: 5s rotate-and-scale infinite ease-in-out;
         }
-        .box:hover{
-            background-color : blue;
-            color: black;
-
+        @keyframes rotate-and-scale{
+        0%{
+            transform: none;
+        }
+        50%{
+            transform: rotate(1turn) scale(.5, .5);
+        }
+        100%{
+            transform: none;
+        }
         }
         </style>
     </head>
     <body>
-        <span class="box">
-            Text
-        </span>
+        <div class="box">
+
+        </div>
     </body>
 
 </html>
