@@ -215,6 +215,8 @@ input[type="password"]{
 
  ooh... so cool...
 
+ one state --> to another state
+
  below code, we can create animation that transits from background color --> hover over during 5sec.
 
  transition works better on focus, active, hover
@@ -252,3 +254,16 @@ input[type="password"]{
     }
   ```
 
+### 12. medai queries
+
+when we want to set browser size
+
+useful in mobile environment 
+
+```css
+@media screen and (min-width:320px) and (max-width:640px){
+    body{
+        background-color: green;
+    }
+}
+```

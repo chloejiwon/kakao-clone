@@ -2,32 +2,20 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Animation</title>
+        <title>Media Queries</title>
         <link href="style.css" rel="stylesheet">
         <style> 
-        .box{
-            width: 500px;
-            height: 500px;
-            background-color: pink;
-            animation: 5s rotate-and-scale infinite ease-in-out;
+        body{
+            background-color: green;
         }
-        @keyframes rotate-and-scale{
-        0%{
-            transform: none;
-        }
-        50%{
-            transform: rotate(1turn) scale(.5, .5);
-        }
-        100%{
-            transform: none;
-        }
+        @media screen and (min-width:320px) and (max-width:640px){
+            body{
+                background-color: aqua;
+            }
         }
         </style>
     </head>
     <body>
-        <div class="box">
-
-        </div>
     </body>
 
 </html>
