@@ -1,0 +1,18 @@
+.nav{
+    position: fixed;
+    width: 100%;
+    /*if I want to use "fixed", I need to set width!!*/
+    padding: 20px 50px;
+    background-color: #fcfcfc;
+    bottom: 10px;
+    border-top: 1px solid #f7f7f7;
+}
+.nav .nav__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav i{
+    font-size: 20px;
+}

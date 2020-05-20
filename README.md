@@ -267,3 +267,35 @@ useful in mobile environment
     }
 }
 ```
+
+ ### 13. box-sizing & border-box
+
+ ```css
+*{
+    box-sizing:border-box;
+}
+ ```
+
+```zsh
+----------------------
+|   |             |   |
+|   |             |   |
+| A |       B     | C |
+|   |             |   |
+-----------------------
+```
+
+Let's say I put A+B (Box, width:300px), and put padding-left (A) 20px. Default behaviour of css and html is like this.
+
+I expected to get B(280px)
+
+css would give you B 300px. (because you set it as 300px)
+
+So total box is 320px. you get extra space C(20px)
+
+
+`box-sizing:border-box` means **let me put the padding but don't make box bigger**
+
+SO If i set `border-box`, then box is A(20px) + B(280px)
+
+It's Okay to use every project `box-sizing:border-box` 😀
