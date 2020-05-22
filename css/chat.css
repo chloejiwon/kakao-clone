@@ -1,0 +1,98 @@
+.chats-body{
+    padding:0;
+}
+.chat-screen{
+    background-image:url("../img/chat-background.png");
+    min-height: 100vh;
+}
+.chats-body .header,
+.chats-body .status-bar{
+    padding:10px 20px;
+}
+/* 왜 나는 그냥 0px 20px로 하면 둘이 붙지?; */
+.chats-body .header{
+    padding:40px 20px;
+}
+.chat__write{
+    position: fixed;
+    bottom:50px;
+    width:80%;
+    display: flex;
+    margin:0 auto;
+    left:0;
+    right:0;
+    background-color:#fcfcfc;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px 20px;
+    border-radius: 40px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+}
+
+.chat__write i{
+    font-size:22px;
+}
+
+.chat__write-column:nth-child(2){
+    width:80%;
+}
+.chat__write-column input{
+    padding:20px;
+    width: 100%;
+    border:none;
+    font-size:14px;
+}
+.chat__write-column input:focus{
+    outline: none;
+}
+.chat-screen .chat__messages{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-top:1px solid #f7f7f7;
+    padding:0px 20px;
+    padding-top:30px;
+}
+
+.chat__messages .chat__timestamp{
+    background-color:white;
+    font-size:12px;
+    font-weight: 700;
+    padding:5px 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+    text-transform: uppercase;
+}
+
+.message{
+    display: flex;
+    align-items: center;
+    width:50%;
+}
+
+.message .message__content{
+    width:80%;
+}
+
+.incoming-messages img{
+    width:30px;
+    border-radius: 15px;
+    margin-right:20px;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+
+}
+.incoming-messages{
+    align-self:flex-start;
+}
+
+.sent-messages{
+    align-self:flex-end;
+}
+
+.message .message__bubble{
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px 20px;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+}
