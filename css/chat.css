@@ -73,9 +73,12 @@
 }
 
 .message .message__content{
-    width:80%;
+    width:90%;
 }
-
+.sent-messages .message__content{
+    display:flex;
+    justify-content: flex-end;
+}
 .incoming-messages img{
     width:30px;
     border-radius: 15px;
@@ -89,6 +92,8 @@
 
 .sent-messages{
     align-self:flex-end;
+    display:flex;
+    justify-content: flex-end;
 }
 
 .message .message__bubble{
@@ -96,6 +101,8 @@
     border-radius: 15px;
     padding: 10px 20px;
     box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+    font-weight: 500;
+    width:100%;
 }
 
 .incoming-messages .message__author{
@@ -107,8 +114,11 @@
 
 .incoming-messages .message__bubble{
     border-bottom-left-radius:0px;
+    background-image: linear-gradient(to right,#00C9FF,#92FE9D);
 }
 
 .sent-messages .message__bubble{
     border-bottom-right-radius:0px;
+    background-image: linear-gradient(to left,#00C9FF,#92FE9D);
+
 }
