@@ -239,6 +239,8 @@ input[type="password"]{
 
  if you put `infinite` inside animation, it will repeat animation forever
 
+ **forward** means, you are going to keep values forever after animation is finished
+
 
   ```css
     .class {
