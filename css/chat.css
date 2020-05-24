@@ -1,7 +1,15 @@
-.chats-body{
-    padding:0;
+.header-wrapper{
+    position:fixed;
+    top:0px;
+    width:100%;
+    margin-bottom:0px;
+    background-color: white;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+    
 }
-.chat-screen{
+.chats-body{
+    padding:10px 0px;
+    padding-top:100px;
     background-image:url("../img/chat-background.png");
     min-height: 100vh;
 }
@@ -11,7 +19,7 @@
 }
 /* 왜 나는 그냥 0px 20px로 하면 둘이 붙지?; */
 .chats-body .header{
-    padding:40px 20px;
+    padding:40px 20px 0px 20px;
 }
 .chat__write{
     position: fixed;
